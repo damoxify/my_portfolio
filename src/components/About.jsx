@@ -17,11 +17,14 @@ const About = () => {
               <p>Hi. I'm Adedamola Ajasa, nice to meet you. Please take a look around.</p>
             </div>
             <div>
-              <p>I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?</p>  
+              <p>
+              After graduating as a mechanical engineer, 
+              I decided to take the leap to pursue a career in software engineering. 
+              I enrolled in a full-time immersive software engineering program at Udacity.
+               Having just graduated from this rigorous program, I can say that applying to a coding bootcamp
+                has been the best decision I have ever made in my life. 
+                I love to learn new technologies and flex my creativity to create amazing things.
+              </p>  
             </div>
           </div>
       </div>

@@ -13,61 +13,62 @@ const Navbar = () => {
       
 {/* MENU */}
 
-        <ul className='hidden md:flex md:flex-grow flex-row-reverse space-x-1'>
-            <li>
-            <Link  to="home" smooth={true}  duration={500}>
-          Home
-        </Link>
-            </li>
-            <li>
-            <Link  to="about" smooth={true}  duration={500}>
-          About
-        </Link>
-            </li>
-            <li>
-            <Link  to="skills" smooth={true}  duration={500}>
-          Skills
-        </Link>
-            </li>
-            <li>
-            <Link  to="work" smooth={true}  duration={500}>
-          Work
-        </Link>
-            </li>
-            <li>
+        <ul className='hidden md:flex md:flex-grow flex-row-reverse space-x-1 '>
+        <li className='hover:border-b-4 border-pink-600 duration-200'>
             <Link  to="contact" smooth={true}  duration={500}>
           Contact
         </Link>
             </li>
+            <li className='hover:border-b-4 border-pink-600 duration-200'>
+            <Link  to="work" smooth={true}  duration={500}>
+          Work
+        </Link>
+            </li>
+            <li className='hover:border-b-4 border-pink-600 duration-200'>
+            <Link  to="skills" smooth={true}  duration={500}>
+          Skills
+        </Link>
+            </li>
+            <li className='hover:border-b-4 border-pink-600 duration-200'>
+            <Link  to="about" smooth={true}  duration={500}>
+          About
+        </Link>
+            </li>
+            <li className='hover:border-b-4 border-pink-600 duration-200 '>
+            <Link  to="home" smooth={true}  duration={500}>
+          Home
+        </Link>
+            </li>
+           
         </ul>
       
 
  {/* HAMBURGER */}
- <div className='md:hidden z-10 ' onClick={handClick}>
-    {!nav ? <FaBars/> : <FaTimes/>}
+ <div className='md:hidden z-10 hover:scale-110 duration-500 hover:text-[#203b64] ' onClick={handClick}>
+    {!nav ? <FaBars/> : <FaTimes className='hover:text-[#203b64]'/>}
  </div>
 
 
  {/* MOBILE MENU */}
  
  <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-    <li className='py-6 text-4xl'><Link onClick={handClick}  to="home" smooth={true}  duration={500}>
+    <li className='py-6 text- hover:scale-110 duration-500 hover:text-[#203b64] '><Link onClick={handClick}  to="home" smooth={true}  duration={500}>
           Home
         </Link></li>
-    <li className='py-6 text-4xl'><Link onClick={handClick} to="about" smooth={true}  duration={500}>
+    <li className='py-6 text- hover:scale-110 duration-500 hover:text-[#203b64] '><Link onClick={handClick} to="about" smooth={true}  duration={500}>
           About
         </Link></li>
-    <li className='py-6 text-4xl'><Link onClick={handClick} to="skills" smooth={true}  duration={500}>
+    <li className='py-6 text- hover:scale-110 duration-500 hover:text-[#203b64] '><Link onClick={handClick} to="skills" smooth={true}  duration={500}>
           Skills
         </Link></li>
-    <li className='py-6 text-4xl'><Link onClick={handClick} to="work" smooth={true}  duration={500}>
+    <li className='py-6 text- hover:scale-110 duration-500 hover:text-[#203b64] '><Link onClick={handClick} to="work" smooth={true}  duration={500}>
           Work
         </Link></li>
-    <li className='py-6 text-4xl'><Link onClick={handClick} to="contact" smooth={true}  duration={500}>
+    <li className='py-6 text- hover:scale-110 duration-500 hover:text-[#203b64] '><Link onClick={handClick} to="contact" smooth={true}  duration={500}>
           Contact
         </Link></li>
 </ul>
- 
+    
 
 
 {/* SOCIAL ICONS */}
