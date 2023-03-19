@@ -3,14 +3,19 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {Link} from 'react-scroll'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     const[nav, setNav] = useState(false)
     const handClick= () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-r from-red-400 to-blue text-gray-300 '>
+      <div className='ml-0 bg-left-top hover:scale-100 duration-75 overflow-hidden '>
+        <a href="/home" alt='return home'>
+        <img src={logo} alt='Logo' className='max-w-[200px]'/>
+        </a>
+      </div>
 {/* MENU */}
 
         <ul className='hidden md:flex md:flex-grow flex-row-reverse space-x-1 '>
@@ -74,7 +79,7 @@ const Navbar = () => {
 {/* SOCIAL ICONS */}
  <div className='hidden lg:flex fixed flex-col  top-[35%] left-0'>
     <ul>
-        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0072b1]'>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1c648a]'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href="https://www.linkedin.com/in/adedamola-ajasa" rel='noopener noreferrer' target={'_blank'}>
                 LinkedIn <FaLinkedin size={30}/>
@@ -85,12 +90,12 @@ const Navbar = () => {
             href="https://www.github.com/damoxify"rel='noopener noreferrer' target={'_blank'}>
                 Github <FaGithub size={30}/>
             </a>
-        </li>  <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#09c095]'>
+        </li>  <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0b3b30]'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href="/" rel='noopener noreferrer' target={'_blank'}>
                 Email <HiOutlineMail size={30}/>
             </a>
-        </li>  <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6c7679]'>
+        </li>  <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#444a4c]'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href="https://docs.google.com/document/d/e/2PACX-1vR2_Ul2Ic4UdTLyTiJI7Xr9XvW5BotjCPNGS5l5rDa2zLxEdvBkzLm3ADUtjbulhg/pub" rel='noopener noreferrer' target={'_blank'}>
                 Resume <BsFillPersonLinesFill size={30}/>
